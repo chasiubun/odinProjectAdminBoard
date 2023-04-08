@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home: Dashboard</title>
+</head>
+<body>
+    <div class="header">HEADER</div>
+    <div class="sidebar">
+        <div class="tasks">[icon] Tasks 
+            <div data-sidebar="sub">
+            <div id=""    
+            </div>
+        <div class="schedule">[icon] schedule
+
+        </div>
+        <div class="patients">[icon] Patients
+            <div data-sidebar="sub">
+                <div id="patientCharts">Patient Charts</div>
+                <div id="patientMedications">Patient Medications</div>
+                <div id="patientForms">Patient Forms</div>
+            </div>
+        </div>
+        <div class="staff">[icon] Staff
+            <div data-sidebar="sub">
+                <div id="staffByTeam">staffByTeam</div>
+            </div>
+        </div>
+        <div class="reports">[icon] Reports
+            <div data-sidebar="sub">
+                <div id="reportOne">Report 1</div>
+                <div id="reportTwo">Report 2</div>
+                <div id="reportThree">Report 3</div>
+            </div>
+        </div>
+        <div class="messages">[icon] Messages
+            <div data-sidebar="sub">
+                <div id="messageByPatient">Messages by Patient</div>
+                <div id="messageByTeam">Messages by Team</div>
+                <div id="messageAll">All Messages</div>
+            </div>
+        </div>
+        <div class="setting">[icon] Settings
+            <div data-sidebar="sub">
+                <div id="userPreferences">User Preferences</div>
+            </div>
+        </div>
+        <div class="support">[icon] Support
+            <div data-sidebar="sub">
+                <div id="userGuide">User Guide</div>
+                <div id="callSupport">callSupport</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="calendar"></div>
+        <div class="todaySchedule"></div>
+        <div class="caseloadInfo"></div>
+        <div class="flaggedPatients"></div>
+    </div>
+</body>
+</html>
+
+<!-- SIDEBAR: Using grid:
+Sidebar will display the symbol and then the page user will click into:
+    ex: (house) Home, (check) Task
+When the user clicks the page, the name will disappear.
+A different column will be added into the grid (retaining sidebar size) of subpages
+Each selection should be different colored. 
+    Ex: Home is blue so that the subpages is lightblue;
+    Ex: Tasks is Orange so the subpages are lighter orange -->
