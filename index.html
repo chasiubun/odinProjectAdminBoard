@@ -5,62 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home: Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">HEADER</div>
-    <div class="sidebar">
-        <div class="tasks">[icon] Tasks 
-            <div data-sidebar="sub">
-            <div id=""    
-            </div>
-        <div class="schedule">[icon] schedule
-
+    <div id="sidebar">
+        <div id="tasks" class="sidebarContent">[icon] Tasks 
+            <div class="sub"></div>
         </div>
-        <div class="patients">[icon] Patients
-            <div data-sidebar="sub">
+        <div id="schedule" class="sidebarContent">[icon] Schedule
+            <div class="sub">
+                <div id="mySchedule">My Schedule</div>
+                <div id="ptSchedule">Patient Schedule</div>
+            </div>
+        </div>
+        <div id="patients" class="sidebarContent">[icon] Patients
+            <div class="sub">
                 <div id="patientCharts">Patient Charts</div>
                 <div id="patientMedications">Patient Medications</div>
                 <div id="patientForms">Patient Forms</div>
             </div>
         </div>
-        <div class="staff">[icon] Staff
-            <div data-sidebar="sub">
+        <div id="staff" class="sidebarContent">[icon] Staff
+            <div class="sub">
                 <div id="staffByTeam">staffByTeam</div>
             </div>
         </div>
-        <div class="reports">[icon] Reports
-            <div data-sidebar="sub">
+        <div id="reports" class="sidebarContent">[icon] Reports
+            <div class="sub">
                 <div id="reportOne">Report 1</div>
                 <div id="reportTwo">Report 2</div>
                 <div id="reportThree">Report 3</div>
             </div>
         </div>
-        <div class="messages">[icon] Messages
-            <div data-sidebar="sub">
+        <div id="messages" class="sidebarContent">[icon] Messages
+            <div class="sub">
                 <div id="messageByPatient">Messages by Patient</div>
                 <div id="messageByTeam">Messages by Team</div>
                 <div id="messageAll">All Messages</div>
             </div>
         </div>
-        <div class="setting">[icon] Settings
-            <div data-sidebar="sub">
+        <div id="setting" class="sidebarContent">[icon] Settings
+            <div class="sub">
                 <div id="userPreferences">User Preferences</div>
             </div>
         </div>
-        <div class="support">[icon] Support
-            <div data-sidebar="sub">
+        <div id="support" class="sidebarContent">[icon] Support
+            <div class="sub">
                 <div id="userGuide">User Guide</div>
                 <div id="callSupport">callSupport</div>
             </div>
         </div>
     </div>
     <div class="content">
-        <div class="calendar"></div>
-        <div class="todaySchedule"></div>
-        <div class="caseloadInfo"></div>
-        <div class="flaggedPatients"></div>
+        <div id="calendarBox">
+            <h1 class="contentDisplay">Calendar</h1>
+            <div id="calendar">GRID HERE</div>
+        </div>
+        <div id="todaySchedule">
+            <h1 class="contentDisplay">Caseload</h1>
+            <div class="scheduleList">James Brown, 1;00PM</div>
+            <div class="scheduleList">Charlie Green, 2:00PM</div>
+        </div>
+        <div id="caseloadInfo">
+            <h1 class="contentDisplay">Caseload</h1>
+            <div class="caseloadLine">James Brown, 123 Main Street, CA, 92349</div>
+            <div class="caseloadLine">Charlie Green, 124, Main Street, CA, 92349</div>
+        </div>
+        <div id="flaggedPatients">
+            <h1 class="contentDisplay">Flagged Patients</h1>
+            <div class="flaggedPatientInfo">James Brown, APS</div>
+            <div class="flaggedPatientInfo">Charlie Green, Discharge Watchlist</div>
+        </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
 
 <!-- SIDEBAR: Using grid:

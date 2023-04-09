@@ -1,0 +1,40 @@
+body{
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content";
+    grid-template-columns: 15vw 85vw;
+}
+
+.header{
+    grid-area: header;
+    background-color: yellow;
+}
+
+.sub{
+    display: none;
+}
+
+#sidebar{
+    grid-area: sidebar;
+    background-color: orange;
+    display: grid;
+}
+
+.sidebarContent{
+    border: 1px solid black;
+    
+}
+
+.content{
+    grid-area: content;
+    background-color: aquamarine;
+    display:grid;
+    grid-template-areas: "calendarbox todaySchedule" "caseloadInfo flaggedPatients";
+    grid-template-columns: 60vw 25vw;
+}
+
+#calendarBox{grid-area: calendarbox;}
+#todaySchedule{grid-area: todaySchedule;}
+#caseloadInfo{grid-area: caseloadInfo;}
+#flaggedPatients{grid-area: flaggedPatients;}
