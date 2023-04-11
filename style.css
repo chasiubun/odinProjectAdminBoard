@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-areas:
-        "header header"
+        "header greeting"
         "sidebar content";
     grid-template-columns: 15vw 85vw;
 }
@@ -9,6 +9,10 @@ body{
 .header{
     grid-area: header;
     background-color: yellow;
+}
+
+.greeting{
+    grid-area: greeting;
 }
 
 .sub{
@@ -28,13 +32,39 @@ body{
 
 .content{
     grid-area: content;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);    
     display:grid;
     grid-template-areas: "calendarbox todaySchedule" "caseloadInfo flaggedPatients";
     grid-template-columns: 60vw 25vw;
+}
+
+h1{
+    /* border: 2px solid rgb(40, 148, 136); */
+    background-color: rgb(246, 211, 211);
+    box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content > div{
+    border: 1px solid black;
 }
 
 #calendarBox{grid-area: calendarbox;}
 #todaySchedule{grid-area: todaySchedule;}
 #caseloadInfo{grid-area: caseloadInfo;}
 #flaggedPatients{grid-area: flaggedPatients;}
+
+#calendarBox{
+    display: grid;
+    grid-template-areas: "calWeek1" "calWeek2" "calWeek3" "calWeek4" "calWeek5";
+}
+.calRow{
+    display: flex;
+}
+.calDay{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+#calendar{
+    justify-self: center;
+}
